@@ -1,0 +1,74 @@
+.App {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+/* TOP */
+.Omotac {
+  width: 450px;
+  height: 550px;
+  background-color: rgb(195, 212, 219);
+  border-radius: 20px;
+  border: 2px solid rgb(104, 97, 97); /* 2px je debljina ivice, solid je stil, a black je boja */
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.TopOkvir {
+  width: 100%;
+  height: 100px;
+}
+
+.TopOkvir input {
+  background-color: rgb(231, 237, 240);
+  width: 100%;
+  height: 100px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border: none;
+}
+
+/* DOWN */
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 kolone sa jednakim širinama */
+  gap: 10px; /* razmak između dugmadi */
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 25px;
+  font-size: 18px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: #a3c0d8;
+}
+
+.btn:hover {
+  background-color: rgb(187, 228, 241);
+  padding: 21px;
+  font-size: 23px;
+}
+
+.double {
+  grid-column: span 2; /* Dugme "C" zauzima dve kolone */
+  background-color: #ff6666; /* Isticanje */
+  color: white;
+  font-weight: bold;
+}
+
+/* Top.js */
+#IDinput {
+  text-align: right;
+  font-size: 30px;
+}
